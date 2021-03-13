@@ -50,6 +50,6 @@ p:hover{
 .step{
     color: rgb(106, 204, 7);
 }
-*{
-    margin: 0px;
+.step-eight{
+    margin-bottom: 70px;
 }
