@@ -11,9 +11,7 @@ h2{
     color: rgb(255, 0, 0);
     font-family: 'Akaya Telivigala', cursive;
 }
-a:hover{
-    background-color: rgb(255, 255, 255);
-}
+
 a:link{
     color: red;
 }
