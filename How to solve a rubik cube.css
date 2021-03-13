@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+body{
+    background-color: rgb(246, 232, 177);
+    font-size: 18px;
+    border: 2px solid red;
+    margin: 0px;
+}
+h2{
+    font-size: 2.5em;
+    color: rgb(255, 0, 0);
+    font-family: 'Akaya Telivigala', cursive;
+}
+a:hover{
+    background-color: rgb(255, 255, 255);
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: rgb(255, 0, 0);
+}
+h1{
+    color: rgb(255, 0, 0);
+    font-family:cursive ;  
+ 
+}
+p{
+    color: rgb(7, 134, 134);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+h2:hover {
+    font-size:70px;
+    transition: font-size 1s linear;
+}
+h1:hover{
+    font-size: 50px;
+    transition: font-size 1s linear;
+   
+}
+p:hover{
+    color: red;
+    background-color: rgb(238, 255, 0);
+}
+.line{
+    text-decoration: none;
+    
+}
+.step{
+    color: rgb(106, 204, 7);
+}
+*{
+    margin: 0px;
+}
