@@ -53,3 +53,14 @@ p:hover{
 .step-eight{
     margin-bottom: 70px;
 }
+.credis{
+    text-align: center;
+    background-color: rgb(11, 211, 11);
+
+}
+.credis-p a{
+    color: rgb(12, 12, 160);
+}
+.credis-p{
+    color: rgb(12, 12, 160);
+}
