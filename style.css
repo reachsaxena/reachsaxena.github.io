@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+:root {
+    --bg-color: #edd0ed;
+    --typewriterSpeed: 6s;
+    --typewriterCharacters: 40;
+}
 
 body{
-       background-color: #edd0ed;
+    background-color: #edd0ed;
     font-size: 18px;
     border: 2px solid red;
     margin: 0px;
+    padding-left: 5px;
+    min-height: 100vh;
+    display: grid;
 }
 h2{
     font-size: 2.5em;
@@ -32,11 +40,7 @@ h2:hover {
     font-size:70px;
     transition: font-size 1s linear;
 }
-h1:hover{
-    font-size: 50px;
-    transition: font-size 1s linear;
-   
-}
+
 p:hover{
     color: red;
     
@@ -49,3 +53,53 @@ p:hover{
     margin-bottom: 70px;
 }
 
+.title{
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    position: relative;
+    width: max-content;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.title::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards;
+  }
+
+  .title::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
